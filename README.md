@@ -30,9 +30,6 @@ cd <repository-directory>
 uv venv
 # Install dependencies (CPU)
 uv sync
-
-# Or install dependencies (CUDA 12.4)
-uv sync --extra cu124
 ```
 
 
