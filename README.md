@@ -41,7 +41,7 @@ uv sync --extra cu124
 An interactive notebook is available for exploration the method of the paper:
 
 ```bash
-uv run marimo run example.py
+uv run marimo edit example.py
 ```
 
 
