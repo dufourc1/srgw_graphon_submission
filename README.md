@@ -32,6 +32,7 @@ uv venv
 uv sync
 ```
 
+For installing `torch` for GPU, please refer to the [uv documentation](https://docs.astral.sh/uv/guides/integration/pytorch/#installing-pytorch).
 
 ### Using Marimo Notebooks
 
