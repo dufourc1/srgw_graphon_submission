@@ -1,0 +1,68 @@
+[project]
+description = "Network Learning with Semi-relaxed Gromov-Wasserstein"
+name = "SrGW_graphon"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cartopy>=0.25.0",
+    "ipykernel>=6.30.1",
+    "kagglehub>=0.4.0",
+    "loguru>=0.7.3",
+    "marimo>=0.18.4",
+    "matplotlib>=3.10.5",
+    "networkx>=3.5",
+    "openai>=2.15.0",
+    "pandas>=2.3.3",
+    "pot>=0.9.5",
+    "pycountry-convert>=0.7.2",
+    "pyrallis>=0.3.1",
+    "pytest>=9.0.2",
+    "scikit-learn>=1.7.1",
+    "seaborn>=0.13.2",
+    "torch>=2.6.0",
+    "torch-geometric>=2.7.0",
+    "tqdm>=4.67.1",
+    "torch",
+    "torch-kmeans>=0.2.0",
+    "python-dotenv>=1.2.1",
+    "sparsebm>=1.6.7",
+    "optree>=0.18.0",
+    "here>=1.4.1",
+    "eeg-positions>=2.1.2",
+    "colorcet>=3.1.0",
+    "scienceplots>=2.2.0",
+    "mne>=1.11.0",
+    "netplotbrain>=0.3.0",
+    "nilearn>=0.13.0",
+    "iplotx>=1.6.0",
+]
+
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu124", marker = "extra == 'cuda'" },
+    { index = "pytorch-cpu", marker = "extra != 'cuda'" },
+]
+
+z-networks = { workspace = true }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.workspace]
+members = ["."]
+
+[dependency-groups]
+dev = ["z-networks"]
+
+
+[tool.marimo.runtime]
+pythonpath = ["."]
