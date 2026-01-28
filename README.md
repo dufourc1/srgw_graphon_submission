@@ -11,7 +11,6 @@ This repository contains the code for the method described in the paper:
 ### Prerequisites
 
 - Python ≥ 3.13
-- (Optional) CUDA 12.4 for GPU acceleration
 
 ### Setup
 
