@@ -1,6 +1,6 @@
 # Estimating Graphons with Gromov-Wasserstein Barycenters
 
-This repository contains the code for the moethod described in the paper:
+This repository contains the code for the method described in the paper:
 
 > **"Network Learning with Semi-relaxed Gromov-Wasserstein: Continuous Relaxation with Discrete Limit"**  
 
