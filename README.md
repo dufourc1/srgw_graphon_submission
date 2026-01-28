@@ -26,6 +26,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 git clone <repository-url>
 cd <repository-directory>
 
+# Create virtual env
+uv venv
 # Install dependencies (CPU)
 uv sync
 
