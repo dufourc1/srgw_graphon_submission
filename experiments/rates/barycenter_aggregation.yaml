@@ -1,0 +1,17 @@
+# barycenter_aggregation.yaml
+experiment_id: 0
+experiment_type: "continuous_multiple"
+num_reps: 20
+initialization: "kmeans_torch"
+num_start: 1
+warmstartT: true
+number_graphs: 10
+
+nodes:
+  n_start: 100
+  n_end: 1000
+  n_step: 100
+
+logging:
+  log_filename: "00_run.log"
+  log_level_file: 9

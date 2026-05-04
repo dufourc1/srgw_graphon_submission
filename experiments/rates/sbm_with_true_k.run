@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH --output=dev/logs/sbm_with_true_k/%a.out  # %A=ArrayID, %a=TaskID
+
+# --- Kuma Specific Directives ---
+#SBATCH --partition=l40s # faster than doing f32 on h100s  
+#SBATCH --time=01:00:00          
+#SBATCH --qos=normal
+
+# --- Resource Request per Job ---
+#SBATCH --array=0-3              
+#SBATCH --gpus=1                 # Request exactly 1 GPU per task
+#SBATCH --cpus-per-task=1        
+
+module purge
+module load gcc python py-virtualenv cuda
+source /home/$USER/venvs/optimal_transport_venv/bin/activate
+
+
+scratch_path="/scratch/$USER/"
+dir_path="/home/$USER/Z_networks/experiments/rates"
+
+
+srun python $dir_path/run_exp.py --config_path $dir_path/sbm_with_true_k.yaml --experiment_id $SLURM_ARRAY_TASK_ID
+
+

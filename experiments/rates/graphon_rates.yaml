@@ -1,0 +1,16 @@
+experiment_type: "continuous"
+number_graphs: 1
+num_reps: 20
+initialization: "kmeans_torch"
+num_start: 1
+warmstartT: true
+timing: true
+
+nodes:
+  n_start: 100
+  n_end: 2000
+  n_step: 200
+
+logging:
+  log_filename: "00_run.log"
+  log_level_file: 10

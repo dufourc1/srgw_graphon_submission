@@ -1,0 +1,19 @@
+experiment_type: "sbm_with_true_k"
+number_graphs: 1
+num_reps: 20
+initialization: "kmeans_torch"
+num_start: 1
+warmstartT: true
+
+nodes:
+  n_start: 100
+  n_end: 10000
+  n_step: 100
+
+
+logging:
+  log_filename: "00_run.log"
+  log_level_file: 10
+
+
+
