@@ -9,7 +9,7 @@ number_graphs: 10
 
 nodes:
   n_start: 100
-  n_end: 1000
+  n_end: 10000
   n_step: 100
 
 logging:

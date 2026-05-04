@@ -8,7 +8,7 @@ timing: true
 
 nodes:
   n_start: 100
-  n_end: 2000
+  n_end: 10000
   n_step: 200
 
 logging:

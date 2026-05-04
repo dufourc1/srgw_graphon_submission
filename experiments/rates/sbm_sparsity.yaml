@@ -7,7 +7,7 @@ warmstartT: true
 
 nodes:
   n_start: 100
-  n_end: 5000
+  n_end: 10000
   n_step: 100
 
 logging:
