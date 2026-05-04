@@ -2,7 +2,7 @@
 
 This repository contains the code for the method described in the paper:
 
-> **"Network Learning with Semi-relaxed Gromov-Wasserstein: Continuous Relaxation with Discrete Limit"**  
+> **"Network Learning with Semi-relaxed Gromov-Wasserstein"**  
 
 
 
